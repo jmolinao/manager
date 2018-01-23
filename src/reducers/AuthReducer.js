@@ -16,8 +16,7 @@ const INITIAL_STATE = {
 
 export default (state = INITIAL_STATE, action) => {
   console.log(action);
-  //este log, lo tengo para visualizar el objeto retornado en el action
-
+  //log para ver que ocurre con el action mientras estoy desarrollando
   switch (action.type) {
     case EMAIL_CHANGE:
       return { ...state, email: action.payload };
